@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  position: relative;
+  background-color: rgb(96, 96, 96);
+  top: 250px;
+  width: 100vw;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-text {
+  display: flex;
+  position: relative;
+  left: 50%;
+  align-items: center;
+  transform: translateX(-50%);
+  color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+}
+
+.footer a:hover {
+  opacity: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
