@@ -1,4 +1,5 @@
 import React from'react';
+import { Link } from 'react-router-dom';
 
 import '../navbar.css';
 import Logo from '../../../assets/logo.jpg';
@@ -7,11 +8,13 @@ function Navbar() {
   let navbar;
   let navLinks;
   let links;
-  window.addEventListener('load', () => {
+
+  setInterval(() => {
     navbar = document.getElementsByClassName('navBar')[0];
     navLinks = document.getElementsByClassName('nav-links')[0];
     links = document.getElementsByClassName('navbar-link');
-  });
+  }, 100);
+  
   // Navbar toggle state
   let toggled = false;
 
@@ -49,11 +52,11 @@ function Navbar() {
     const width = window.innerWidth;
     if (width >= 850) nav.hide();
   });
-  
+
   return (
     <div id="container">
     <div className="top-bar">
-      <a href="index.html"><img src={Logo} alt="logo" className="top-logo"/></a>
+      <Link to="/"><img src={Logo} alt="logo" className="top-logo"/></Link>
       <ul className='top-links'>
         <li className="top-number">
         <svg xmlns="http://www.w3.org/2000/svg" className="top-icon number" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -86,12 +89,12 @@ function Navbar() {
     </div>
     <nav className="navBar">
       <ul className="nav-links">
-        <li><a id="home" className="navbar-link" href="/">Forside</a></li>
-        <li><a id="about" className="navbar-link" href="/about">Om</a></li>
-        <li><a id="contact" className="navbar-link" href="/contact">Kontakt</a></li>
+        <li><Link className='navbar-link' to='/'>Forside</Link></li>
+        <li><Link className='navbar-link' to='/about'>Om</Link></li>
+        <li><Link className='navbar-link' to='/contact'>Kontakt</Link></li>
       </ul>
       <li className='languages'>
-        <a className='lang active' href='/dk' id='da'>
+        <Link className='lang' to={window.location.pathname} id='da'>
           <img
             src="https://flagcdn.com/20x15/dk.png"
             srcset="https://flagcdn.com/40x30/dk.png 2x,
@@ -99,8 +102,8 @@ function Navbar() {
             width="35"
             height="15"
             alt="DK"/>
-        </a>
-        <a className='lang' href='/en' id='en'>
+        </Link>
+        <Link className='lang' to={'/en' + window.location.pathname} id='en'>
           <img
             src="https://flagcdn.com/20x15/us.png"
             srcset="https://flagcdn.com/40x30/us.png 2x,
@@ -108,8 +111,8 @@ function Navbar() {
             width="30"
             height="15"
             alt="United States"/>
-        </a>
-        <a className='lang' href='/grl' id='grl'>
+        </Link>
+        <Link className='lang' to={'/grl' + window.location.pathname} id='grl'>
           <img
             src="https://flagcdn.com/20x15/gl.png"
             srcset="https://flagcdn.com/40x30/gl.png 2x,
@@ -117,7 +120,7 @@ function Navbar() {
             width="30"
             height="15"
             alt="Greenland"/>
-        </a>
+        </Link>
         </li>
     </nav>
   </div>

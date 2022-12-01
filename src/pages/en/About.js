@@ -1,14 +1,16 @@
 import React from'react';
 
-import './about.css'
+import '../stylesheets/about.css';
+import Navbar from '../../components/navbar/en/Navbar';
 
 function About() {
   return (
     <div>
+      <Navbar />
       <div className="intro">
         <h1 id="about-intro">About LL Regnskab ApS</h1>
       </div>
-      <main>
+      <main className='main-about'>
         <div className="about">
           <h2 id="about-about">About</h2>
           <p id="about-description">

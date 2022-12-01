@@ -1,14 +1,16 @@
 import React from'react';
 
-import './about.css'
+import Navbar from '../../components/navbar/dk/Navbar';
+import '../stylesheets/about.css';
 
 function About() {
   return (
     <div>
+      <Navbar />
       <div className="intro">
         <h1 id="about-intro">Om LL Regnskab</h1>
       </div>
-      <main>
+      <main className='main-about'>
         <div className="about">
           <h2 id="about-about">Om</h2>
           <p id="about-description">LL Regnskab ApS startede 1. juli 2017 og har kontor i 

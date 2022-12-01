@@ -1,4 +1,5 @@
 import React from'react';
+import { Link } from 'react-router-dom';
 
 import '../navbar.css';
 import Logo from '../../../assets/logo.jpg';
@@ -7,11 +8,13 @@ function Navbar() {
   let navbar;
   let navLinks;
   let links;
-  window.addEventListener('load', () => {
+  
+  setInterval(() => {
     navbar = document.getElementsByClassName('navBar')[0];
     navLinks = document.getElementsByClassName('nav-links')[0];
     links = document.getElementsByClassName('navbar-link');
-  });
+  }, 100);
+  
   // Navbar toggle state
   let toggled = false;
 
@@ -49,11 +52,17 @@ function Navbar() {
     const width = window.innerWidth;
     if (width >= 850) nav.hide();
   });
+
+  function currentPath () {
+    const path = window.location.pathname;
+    const currentpPage = path.split('/');
+    return currentpPage[2];
+  };
   
   return (
     <div id="container">
     <div className="top-bar">
-      <a href="index.html"><img src={Logo} alt="logo" className="top-logo"/></a>
+      <Link to="/en/"><img src={Logo} alt="logo" className="top-logo"/></Link>
       <ul className='top-links'>
         <li className="top-number">
         <svg xmlns="http://www.w3.org/2000/svg" className="top-icon number" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -75,7 +84,9 @@ function Navbar() {
           <circle cx="12" cy="11" r="3"></circle>
           <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
         </svg>
-          <a id="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>Adresse: Sanatorievej 1004, Qaqortoq</a>
+          <a id="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>
+            Address: Sanatorievej 1004, Qaqortoq
+          </a>
         </li>
       </ul>
       <div className="link-burger" id="navToggle" onClick={navbarClickHandler}>
@@ -86,12 +97,12 @@ function Navbar() {
     </div>
     <nav className="navBar">
       <ul className="nav-links">
-        <li><a id="home" className="navbar-link" href="/">Home</a></li>
-        <li><a id="about" className="navbar-link" href="/about">About</a></li>
-        <li><a id="contact" className="navbar-link" href="/contact">Contact</a></li>
+        <li><Link className='navbar-link' to='/en/'>Home</Link></li>
+        <li><Link className='navbar-link' to='/en/about'>About</Link></li>
+        <li><Link className='navbar-link' to='/en/contact'>Contact</Link></li>
       </ul>
       <li className='languages'>
-        <a className='lang' href='/dk' id='da'>
+        <Link className='lang' to={'/' + currentPath()} id='da'>
           <img
             src="https://flagcdn.com/20x15/dk.png"
             srcset="https://flagcdn.com/40x30/dk.png 2x,
@@ -99,8 +110,8 @@ function Navbar() {
             width="35"
             height="15"
             alt="DK"/>
-        </a>
-        <a className='lang' href='/en' id='en'>
+        </Link>
+        <Link className='lang' to={window.location.pathname} id='en'>
           <img
             src="https://flagcdn.com/20x15/us.png"
             srcset="https://flagcdn.com/40x30/us.png 2x,
@@ -108,8 +119,8 @@ function Navbar() {
             width="30"
             height="15"
             alt="United States"/>
-        </a>
-        <a className='lang' href='/grl' id='grl'>
+        </Link>
+        <Link className='lang' to={'/grl/' + currentPath()} id='grl'>
           <img
             src="https://flagcdn.com/20x15/gl.png"
             srcset="https://flagcdn.com/40x30/gl.png 2x,
@@ -117,7 +128,7 @@ function Navbar() {
             width="30"
             height="15"
             alt="Greenland"/>
-        </a>
+        </Link>
         </li>
     </nav>
   </div>

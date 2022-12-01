@@ -1,28 +1,27 @@
 import React from'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import Navbar from './components/navbar/dk/Navbar';
-import EnNavbar from './components/navbar/en/Navbar';
-import GrlNavbar from './components/navbar/grl/Navbar';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
 
 import Footer from './components/Footer';
 
-import Home from './pages/dk/home/Home';
-import About from './pages/dk/about/About';
-import Contact from './pages/dk/contact/Contact';
+import Home from './pages/dk/Home';
+import About from './pages/dk/About';
+import Contact from './pages/dk/Contact';
 
-import EnHome from './pages/en/home/Home';
-import EnAbout from './pages/en/about/About';
-import EnContact from './pages/en/contact/Contact';
+import EnHome from './pages/en/Home';
+import EnAbout from './pages/en/About';
+import EnContact from './pages/en/Contact';
 
-import GrlHome from './pages/grl/home/Home';
-import GrlAbout from './pages/grl/about/About';
-import GrlContact from './pages/grl/contact/Contact';
+import GrlHome from './pages/grl/Home';
+import GrlAbout from './pages/grl/About';
+import GrlContact from './pages/grl/Contact';
 
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
 
         <Route path="/" element={<Home />} />

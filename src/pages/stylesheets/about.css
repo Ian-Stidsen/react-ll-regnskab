@@ -6,11 +6,11 @@
   --right-image-width: calc(100vw - 600px);
 }
 
-main {
+.main-about {
   display: flex;
-  justify-content: space-between;
   position: relative;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -22,7 +22,7 @@ main {
   align-items: left;
   height: 400px;
   width: 100vw;
-  background-image: url('../../../assets/ultra-wide.jpg');
+  background-image: url('../../assets/ultra-wide.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -80,9 +80,10 @@ main {
   justify-content: right;
   position: relative;
   margin-top: 75px;
-  margin-right: 20px;
+  margin-right: 50px;
   width: var(--right-image-width);
-  background-image: url('../../../assets/office-wide.jpg');
+  max-width: 600px;
+  background-image: url('../../assets/office-wide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,13 +91,17 @@ main {
 }
 
 @media screen and (min-width: 1500px) {
-  :root {
-    --right-image-width: 900px;
+  .about {
+    margin-left: 120px;
+  }
+
+  .right-image {
+    margin-right: 150px;
   }
 }
 
 @media screen and (max-width: 1050px) {
-  main {
+  .main-about {
     align-items: center;
     flex-direction: column;
   }

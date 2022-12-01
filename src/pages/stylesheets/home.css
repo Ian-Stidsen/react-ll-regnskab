@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 
-main {
+.main-home {
   display: flex;
   flex-direction: column;
-  position: relative;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -17,7 +17,7 @@ main {
   align-items: center;
   height: 400px;
   width: 100vw;
-  background-image: url('../../../assets/ultra-wide.jpg');
+  background-image: url('../../assets/ultra-wide.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -39,21 +39,19 @@ main {
   transform: translateY(-26px);
 }
 
-.description {
-  display: block;
-  position: relative;
+.short-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 50px;
   width: 300px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-.description h2 {
+.short-introduction h2 {
   color: var(--theme-color);
   margin-bottom: 10px;
   font-weight: normal;
   font-size: 2rem;
-  transform: translateX(13%);
 }
 
 .description p {
@@ -64,13 +62,12 @@ main {
 .bottom-image {
   display: flex;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80vw;
+  justify-content: center;
+  width: 60vw;
   height: 300px;
-  margin-top: 60px;
+  margin-top: 40px;
   border-radius: 10px;
-  background-image: url('../../../assets/office-wide.jpg');
+  background-image: url('../../assets/office-wide.jpg');
   background-size: cover;
   background-position: center;
 }
