@@ -27,7 +27,7 @@
   color: white;
   text-shadow: 2px -2px black;
   font-weight: normal;
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .intro h2 {
@@ -36,7 +36,6 @@
   font-weight: normal;
   font-size: 2.5rem;
   text-shadow: 2px -2px black;
-  transform: translateY(-26px);
 }
 
 .short-introduction {

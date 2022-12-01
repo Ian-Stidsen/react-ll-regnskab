@@ -15,7 +15,7 @@ function About() {
           <h2 id="about-about">About</h2>
           <p id="about-description">
             LL Regnskab ApS started on July 1, 2017, 
-            and we have an office in Qaqortoq with three employees and one student.
+            and we have an office in Qaqortoq with four employees and one student.
           </p>
           <h3 id="jobs-h1">What we do</h3>
           <ul>

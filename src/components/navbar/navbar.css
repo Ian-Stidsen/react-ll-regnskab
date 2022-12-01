@@ -59,7 +59,7 @@ a:hover {
   height: 1.5rem;
   align-items: center;
   margin-right: 15px;
-  transform: translateY(6px);
+  transform: translateY(-2px);
   color: var(--theme-color);
 }
 
@@ -72,6 +72,7 @@ a:hover {
   background-color: var(--navbar-color);
   transition: 300ms;
   position: sticky;
+  z-index: 10;
 }
 
 .nav-links {
@@ -82,6 +83,7 @@ a:hover {
   list-style: none;
   align-items: center;
   margin-right: 160px;
+  z-index: 10;
 }
 
 .nav-links li {
@@ -91,6 +93,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin-right: 40px;
+  z-index: 10;
 }
 
 .nav-links a {
@@ -101,6 +104,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 
 .nav-links li:hover {

@@ -14,7 +14,7 @@ function About() {
         <div className="about">
           <h2 id="about-about">LL Regnskab ApS pillugu</h2>
           <p id="about-description">LL Regnskab ApS 1.juli 2017 aallartippoq, 
-            sulisut pingasut ilinniartorlu Qaqortumi allaffeqarpugut.
+            sulisut sisamat ilinniartorlu Qaqortumi allaffeqarpugut.
           </p>
           <h3 id="jobs-h1">Uku suliarisarpagut</h3>
           <ul>

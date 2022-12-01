@@ -91,6 +91,7 @@
 
 .card a:hover {
   cursor: pointer;
+  color: var(--theme-color);
 }
 
 .icon {

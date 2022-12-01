@@ -1,5 +1,6 @@
 {
-  "name": "react-ll-regnskab",
+  "name": "ll-regnskab",
+  "homepage": "https://ll-regnskab.gl",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
