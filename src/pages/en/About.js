@@ -6,7 +6,6 @@ import Navbar from '../../components/navbar/en/Navbar';
 function About() {
   return (
     <div>
-      <Navbar />
       <div className="intro">
         <h1 id="about-intro">About LL Regnskab ApS</h1>
       </div>

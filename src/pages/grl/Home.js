@@ -6,7 +6,6 @@ import Navbar from '../../components/navbar/grl/Navbar';
 function Home() {
   return (
     <div>
-      <Navbar />
       <div className="intro">
         <h1 id="introh1">Tikilluarit</h1>
       <h2 id="intro-name">LL Regnskab ApS-imut</h2>
@@ -14,7 +13,7 @@ function Home() {
       <main className='main-home text-center'>
         <div className="short-introduction">
           <h2>LL regnskab ApS</h2>
-          <p>LL Regnskab ApS naatsorsuisarfitut suliffeqarfiuvoq. 
+          <p>LL Regnskab ApS naatsorsuuserivittut suliffeqarfiuvoq. 
             LL Regnskab ApS Qaqortumi allaffeqarpoq taavalu 2017-mi aallartinneqarluni.
           </p>
         </div>

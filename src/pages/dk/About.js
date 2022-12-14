@@ -6,7 +6,6 @@ import '../stylesheets/about.css';
 function About() {
   return (
     <div>
-      <Navbar />
       <div className="intro">
         <h1 id="about-intro">Om LL Regnskab</h1>
       </div>

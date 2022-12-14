@@ -6,7 +6,6 @@ import Navbar from '../../components/navbar/en/Navbar';
 function Contact() {
   return (
     <div>
-      <Navbar />
       <div className="intro">
     <h1 id="contact-intro">Contact us</h1>
   </div>
@@ -28,13 +27,13 @@ function Contact() {
               <a href="mailto:laila@llregnskab.com" id="contact-company-email">Email: laila@llregnskab.com</a>
             </p>
 
-            <p className="location">
+            <div className="location">
               <a id="contact-address" className="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>
                 Address: Sanatorievej B 1004, 3920 Qaqortoq
               </a>
               <p className="PO-box">PO box 442</p>
               <p className="cvr">CVR nr. 12924453</p>
-            </p>
+            </div>
           </div>
         </div>
         

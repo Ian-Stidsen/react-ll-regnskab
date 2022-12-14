@@ -6,7 +6,6 @@ import '../stylesheets/home.css';
 function Home() {
   return (
     <div>
-      <Navbar />
       <div className="intro">
         <h1 id="introh1">Velkommen til</h1>
         <h2 id="intro-name">LL Regnskab ApS</h2>
@@ -14,8 +13,8 @@ function Home() {
       <main className='main-home'>
         <div className="short-introduction text-center">
           <h2>LL Regnskab ApS</h2>
-          <p>LL Regnskab ApS er en grønlandsk regnskab og bogholderi virksomhed.
-            LL Regnskab har en kontor i Qaqortoq.
+          <p>LL Regnskab ApS er en grønlandsk regnskab og bogholderi virksomhed. <br></br>
+            LL Regnskab har et kontor i Qaqortoq. <br></br>
             LL Regnskab blev startet i 2017.
           </p>
         </div>

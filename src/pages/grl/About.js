@@ -6,7 +6,6 @@ import Navbar from '../../components/navbar/grl/Navbar';
 function About() {
   return (
     <div>
-      <Navbar />
       <div className="intro">
         <h1 id="about-intro">LL Regnskab ApS pillugu</h1>
       </div>

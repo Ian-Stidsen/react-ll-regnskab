@@ -138,11 +138,6 @@
   background-position-y: 0;
 }
 
-/* Quick fix for bootstrap messing up navbar links */
-.nav-links {
-  transform: translateY(8px);
-}
-
 @media screen and (min-width: 1000px) {
   .contact {
     grid-template-areas: 

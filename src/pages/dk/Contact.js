@@ -6,9 +6,8 @@ import '../stylesheets/contact.css';
 function Contact() {
   return (
     <div>
-      <Navbar />
       <div className="intro">
-        <h1 id="contact-intro">Kontakt Os</h1>
+        <h1 id="contact-intro">Kontakt os</h1>
       </div>
       <main className='main-contact'>
         <div className="contact">
@@ -23,11 +22,11 @@ function Contact() {
               <p className="email">
                 <a href="mailto:laila@llregnskab.com" id="contact-company-email">Email: laila@llregnskab.com</a>
               </p>
-              <p className="location">
+              <div className="location">
                 <a id="contact-address" className="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>Adresse: Sanatorievej B 1004, 3920 Qaqortoq</a>
                 <p className="PO-box">Postboks 442</p>
                 <p className="cvr">CVR nr. 12924453</p>
-              </p>
+              </div>
             </div>
           </div>
           

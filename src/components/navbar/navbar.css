@@ -183,6 +183,7 @@ a:hover {
 
 .nav-links.show {
   margin-top: 10px;
+  margin-left: 5px;
   display: flex;
   flex-direction: column;
   z-index: 10;
@@ -195,6 +196,11 @@ a:hover {
 
 .nav-link.show {
   border-bottom: 1px solid gray;
+}
+
+/* Quick fix for bootstrap messing up navbar links */
+.nav-links {
+  transform: translateY(8px);
 }
 
 @media screen and (max-width: 850px) {
