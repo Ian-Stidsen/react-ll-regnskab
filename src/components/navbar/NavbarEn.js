@@ -1,14 +1,14 @@
 import React, { Suspense } from'react';
 import { Link, Outlet } from 'react-router-dom';
 
-import '../navbar.css';
-import Logo from '../../../assets/logo.jpg';
+import './navbar.css';
+import Logo from './../../assets/logo.jpg';
 
-function Navbar() {
+function NavbarEn() {
   let navbar;
   let navLinks;
   let links;
-
+  
   setInterval(() => {
     navbar = document.getElementsByClassName('navBar')[0];
     navLinks = document.getElementsByClassName('nav-links')[0];
@@ -53,17 +53,23 @@ function Navbar() {
     if (width >= 850) nav.hide();
   });
 
+  function currentPath () {
+    const path = window.location.pathname;
+    const currentpPage = path.split('/');
+    return currentpPage[2];
+  };
+  
   return (
     <div id="container">
     <div className="top-bar">
-      <Link to="/"><img src={Logo} alt="logo" className="top-logo"/></Link>
+      <Link to="/en/"><img src={Logo} alt="logo" className="top-logo"/></Link>
       <ul className='top-links'>
         <li className="top-number">
         <svg xmlns="http://www.w3.org/2000/svg" className="top-icon number" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
           <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
         </svg>
-          <a id="telephone" href='tel:+299641603'>Telefon: (+299)641603</a></li>
+          <a id="telephone" href='tel:+299641603'>Telephone: (+299)641603</a></li>
         <li className="top-email">
         <svg xmlns="http://www.w3.org/2000/svg" className="top-icon email" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -78,7 +84,9 @@ function Navbar() {
           <circle cx="12" cy="11" r="3"></circle>
           <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
         </svg>
-          <a id="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>Adresse: Sanatorievej 1004, Qaqortoq</a>
+          <a id="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>
+            Address: Sanatorievej 1004, Qaqortoq
+          </a>
         </li>
       </ul>
       <div className="link-burger" id="navToggle" onClick={navbarClickHandler}>
@@ -89,12 +97,12 @@ function Navbar() {
     </div>
     <nav className="navBar">
       <ul className="nav-links">
-        <li><Link className='navbar-link' to='/'>Forside</Link></li>
-        <li><Link className='navbar-link' to='/about'>Om</Link></li>
-        <li><Link className='navbar-link' to='/contact'>Kontakt</Link></li>
+        <li><Link className='navbar-link' to='/en/'>Home</Link></li>
+        <li><Link className='navbar-link' to='/en/about'>About</Link></li>
+        <li><Link className='navbar-link' to='/en/contact'>Contact</Link></li>
       </ul>
       <li className='languages'>
-        <Link className='lang' to={window.location.pathname} id='da'>
+        <Link className='lang' to={'/' + currentPath()} id='da'>
           <img
             src="https://flagcdn.com/20x15/dk.png"
             srcSet="https://flagcdn.com/40x30/dk.png 2x,
@@ -103,7 +111,7 @@ function Navbar() {
             height="15"
             alt="DK"/>
         </Link>
-        <Link className='lang' to={'/en' + window.location.pathname} id='en'>
+        <Link className='lang' to={window.location.pathname} id='en'>
           <img
             src="https://flagcdn.com/20x15/us.png"
             srcSet="https://flagcdn.com/40x30/us.png 2x,
@@ -112,7 +120,7 @@ function Navbar() {
             height="15"
             alt="United States"/>
         </Link>
-        <Link className='lang' to={'/grl' + window.location.pathname} id='grl'>
+        <Link className='lang' to={'/grl/' + currentPath()} id='grl'>
           <img
             src="https://flagcdn.com/20x15/gl.png"
             srcSet="https://flagcdn.com/40x30/gl.png 2x,
@@ -130,4 +138,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarEn;

@@ -1,7 +1,6 @@
 import React from'react';
 
 import '../stylesheets/about.css';
-import Navbar from '../../components/navbar/en/Navbar';
 
 function About() {
   return (

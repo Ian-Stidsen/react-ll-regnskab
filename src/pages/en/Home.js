@@ -1,7 +1,6 @@
 import React from'react';
 
 import '../stylesheets/home.css';
-import Navbar from '../../components/navbar/en/Navbar';
 
 function Home() {
   return (

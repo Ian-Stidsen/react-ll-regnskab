@@ -1,6 +1,5 @@
 import React from'react';
 
-import Navbar from '../../components/navbar/dk/Navbar';
 import '../stylesheets/about.css';
 
 function About() {

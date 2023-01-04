@@ -7,9 +7,9 @@ import {
 
 import Footer from './components/Footer';
 
-import Navbar from './components/navbar/dk/Navbar';
-import EnNavbar from './components/navbar/en/Navbar';
-import GrlNavbar from './components/navbar/grl/Navbar';
+import Navbar from './components/navbar/Navbar';
+import EnNavbar from './components/navbar/NavbarEn';
+import GrlNavbar from './components/navbar/NavbarGrl';
 
 
 const Home = lazy(() => import('./pages/dk/Home'));
