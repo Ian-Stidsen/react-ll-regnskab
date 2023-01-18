@@ -1,64 +1,64 @@
-import React, { Suspense } from'react';
-import { Link, Outlet } from 'react-router-dom';
+import React, {
+  Suspense,
+  useEffect,
+  useRef,
+  useState
+} from'react';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 
 import './navbar.css';
 import Logo from './../../assets/logo.jpg';
 
-function NavbarEn() {
-  let navbar;
-  let navLinks;
-  let links;
-  
-  setInterval(() => {
-    navbar = document.getElementsByClassName('navBar')[0];
-    navLinks = document.getElementsByClassName('nav-links')[0];
-    links = document.getElementsByClassName('navbar-link');
-  }, 100);
-  
-  // Navbar toggle state
-  let toggled = false;
+function Navbar() {
+  const windowLocation = useLocation();
 
-  // Shows and hides navbar when screen width is less than 850px
-  function NavFunction() {
-    this.show = function() {
-      toggled = true;
-      navbar.classList.add('show');
-      for (let i = 0; i < 3; i++) {
-        links[i].classList.add('show');
-      }
-      setTimeout(function () {
-        if (toggled) navLinks.classList.add('show');
-      }, 300);
-    };
-
-    this.hide = function() {
-      toggled = false;
-      navbar.classList.remove('show');
-      navLinks.classList.remove('show');
-      for (let i = 0; i < 3; i++) {
-        links[i].classList.remove('show');
-      }
-    };
-  };
-
-  const nav = new NavFunction();
-
-  function navbarClickHandler() {
-    if (!toggled) nav.show();
-    else nav.hide();
-  };
-
-  window.addEventListener('resize', () => {
-    const width = window.innerWidth;
-    if (width >= 850) nav.hide();
+  const [navbarState, SetNavbarState] = useState(false);
+  const [navbarClassNames, setNavbarClassNames] = useState({
+    navbar: 'navBar',
+    navLinks: 'nav-links',
+    link: 'navbar-link'
   });
 
-  function currentPath () {
-    const path = window.location.pathname;
-    const currentpPage = path.split('/');
-    return currentpPage[2];
+  const showNavbar = () => {
+    setNavbarClassNames({
+      navbar: 'navBar show',
+      navLinks: 'nav-links',
+      link: 'navbar-link show',
+    });
+
+    // Only shows the navbar links when transition ends
+    setTimeout(() => {
+      setNavbarClassNames(prevState => {
+        return {
+          ...prevState,
+          navLinks: 'nav-links show'
+        }
+      });
+    }, 200);
   };
-  
+
+  const hideNavbar = () => {
+    setNavbarClassNames({
+      navbar: 'navBar',
+      navLinks: 'nav-links',
+      link: 'navbar-link'
+    });
+  };
+
+  // When navbarState changes shows or hides the navbar
+  useEffect(() => {
+    navbarState ? showNavbar() : hideNavbar();
+  }, [navbarState]);
+
+  // Only runs the code 200ms after the user is done resizing
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      if (window.innerWidth >= 850) SetNavbarState(false);
+    }, 200);
+  });
+
   return (
     <div id="container">
     <div className="top-bar">
@@ -89,20 +89,20 @@ function NavbarEn() {
           </a>
         </li>
       </ul>
-      <div className="link-burger" id="navToggle" onClick={navbarClickHandler}>
+      <div className="link-burger" id="navToggle" onClick={() => {SetNavbarState(!navbarState)}}>
         <span className="top"></span>
         <span className="middle"></span>
         <span className="bottom"></span>
       </div>
     </div>
-    <nav className="navBar">
-      <ul className="nav-links">
-        <li><Link className='navbar-link' to='/en/'>Home</Link></li>
-        <li><Link className='navbar-link' to='/en/about'>About</Link></li>
-        <li><Link className='navbar-link' to='/en/contact'>Contact</Link></li>
+    <nav className={navbarClassNames.navbar}>
+      <ul className={navbarClassNames.navLinks}>
+        <li><Link className={navbarClassNames.link} to='/en/'>Home</Link></li>
+        <li><Link className={navbarClassNames.link} to='/en/about'>About</Link></li>
+        <li><Link className={navbarClassNames.link} to='/en/contact'>Contact</Link></li>
       </ul>
       <li className='languages'>
-        <Link className='lang' to={'/' + currentPath()} id='da'>
+        <Link className='lang' to={'/' + windowLocation.pathname.split('/')[2]} id='da'>
           <img
             src="https://flagcdn.com/20x15/dk.png"
             srcSet="https://flagcdn.com/40x30/dk.png 2x,
@@ -111,7 +111,7 @@ function NavbarEn() {
             height="15"
             alt="DK"/>
         </Link>
-        <Link className='lang' to={window.location.pathname} id='en'>
+        <Link className='lang' to={windowLocation.pathname} id='en'>
           <img
             src="https://flagcdn.com/20x15/us.png"
             srcSet="https://flagcdn.com/40x30/us.png 2x,
@@ -120,7 +120,7 @@ function NavbarEn() {
             height="15"
             alt="United States"/>
         </Link>
-        <Link className='lang' to={'/grl/' + currentPath()} id='grl'>
+        <Link className='lang' to={'/grl/' + windowLocation.pathname.split('/')[2]} id='grl'>
           <img
             src="https://flagcdn.com/20x15/gl.png"
             srcSet="https://flagcdn.com/40x30/gl.png 2x,
@@ -138,4 +138,4 @@ function NavbarEn() {
   );
 }
 
-export default NavbarEn;
+export default Navbar;

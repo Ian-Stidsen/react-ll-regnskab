@@ -10,8 +10,6 @@ import './navbar.css';
 import Logo from './../../assets/logo.jpg';
 
 function Navbar() {
-  const log = (log) => {console.log(log)};
-
   const windowLocation = useLocation();
 
   const [navbarState, SetNavbarState] = useState(false);
@@ -51,17 +49,13 @@ function Navbar() {
   useEffect(() => {
     navbarState ? showNavbar() : hideNavbar();
   }, [navbarState]);
-
-  const navbarExpandClickHandler = () => {
-    SetNavbarState(!navbarState);
-  };
   
   // Only runs the code 200ms after the user is done resizing
   let resizeTimeout;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
-      if (window.innerWidth >= 850) hideNavbar();
+      if (window.innerWidth >= 850) SetNavbarState(false);
     }, 200);
   });
 
@@ -93,7 +87,7 @@ function Navbar() {
           <a id="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>Adresse: Sanatorievej 1004, Qaqortoq</a>
         </li>
       </ul>
-      <div className="link-burger" onClick={navbarExpandClickHandler}>
+      <div className="link-burger" onClick={() => {SetNavbarState(!navbarState)}}>
         <span className="top"></span>
         <span className="middle"></span>
         <span className="bottom"></span>
