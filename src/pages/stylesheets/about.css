@@ -34,6 +34,7 @@
   font-weight: normal;
   margin-left: 30px;
   margin-bottom: 40px;
+  transform: translateY(-60px);
 }
 
 .about {
