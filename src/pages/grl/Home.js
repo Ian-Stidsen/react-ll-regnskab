@@ -14,7 +14,7 @@ function Home() {
           <h2>LL regnskab ApS</h2>
           <p>LL Regnskab ApS naatsorsuuserivittut suliffeqarfiuvoq. 
             LL Regnskab ApS Qaqortumi tungaveqarpoq, Nuummi allafeqarlunilu. 
-            Suliffeqarfik 2017-mi aallartinneqarpoq
+            Suliffeqarfik 2017-mi aallartinneqarpoq.
           </p>
         </div>
         <div className="bottom-image"></div>
