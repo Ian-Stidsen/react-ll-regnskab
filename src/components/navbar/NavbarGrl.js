@@ -95,24 +95,7 @@ function NavbarGrl() {
         <li><Link className={navbarClassNames.link} to='/grl/contact'>Attavigisugut</Link></li>
       </ul>
       <li className='languages'>
-        <Link className='lang' to={'/' + windowLocation.pathname.split('/')[2]} id='da'>
-          <img
-            src="https://flagcdn.com/20x15/dk.png"
-            srcSet="https://flagcdn.com/40x30/dk.png 2x,
-              https://flagcdn.com/60x45/dk.png 3x"
-            width="35"
-            height="15"
-            alt="DK"/>
-        </Link>
-        <Link className='lang' to={'/en/' + windowLocation.pathname.split('/')[2]} id='en'>
-          <img
-            src="https://flagcdn.com/20x15/us.png"
-            srcSet="https://flagcdn.com/40x30/us.png 2x,
-              https://flagcdn.com/60x45/us.png 3x"
-            width="30"
-            height="15"
-            alt="United States"/>
-        </Link>
+
         <Link className='lang' to={windowLocation.pathname} id='grl'>
           <img
             src="https://flagcdn.com/20x15/gl.png"
@@ -122,6 +105,27 @@ function NavbarGrl() {
             height="15"
             alt="Greenland"/>
         </Link>
+
+        <Link className='lang' to={'/' + windowLocation.pathname.split('/')[2]} id='da'>
+          <img
+            src="https://flagcdn.com/20x15/dk.png"
+            srcSet="https://flagcdn.com/40x30/dk.png 2x,
+              https://flagcdn.com/60x45/dk.png 3x"
+            width="35"
+            height="15"
+            alt="DK"/>
+        </Link>
+        
+        <Link className='lang' to={'/en/' + windowLocation.pathname.split('/')[2]} id='en'>
+          <img
+            src="https://flagcdn.com/20x15/us.png"
+            srcSet="https://flagcdn.com/40x30/us.png 2x,
+              https://flagcdn.com/60x45/us.png 3x"
+            width="30"
+            height="15"
+            alt="United States"/>
+        </Link>
+       
         </li>
     </nav>
     <Suspense fallback={<h1>Loading...</h1>}>

@@ -120,7 +120,11 @@
   height: 175px;
 }
 
-#laila .card-img {background-image: url('../../assets/employees/Laila\ Lund.jpg');}
+#laila .card-img {
+  background-image: url('../../assets/employees/Laila\ Lund.jpg');
+  height: 255px;
+  background-position: top;
+}
 
 #stine .card-img {background-image: url('../../assets/employees/Stine\ Semsen.jpg');}
 

@@ -44,6 +44,23 @@ html {
   font-size: 1rem;
 }
 
+.top-address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.top-address p {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.addresses {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
 a:hover {
   color: var(--theme-color);
 }

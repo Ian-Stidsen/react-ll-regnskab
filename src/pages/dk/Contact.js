@@ -23,9 +23,8 @@ function Contact() {
               </p>
               <div className="location">
                 <a id="contact-address" className="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>
-                  Adresse: Sanatorievej B 1004, 3920 Qaqortoq
+                  Adresse: Sanatorievej B 1004 <br></br> 3920 Qaqortoq
                 </a>
-                <p className="PO-box">Postboks 442</p>
                 <p className="cvr">CVR nr. 12924453</p>
               </div>
             </div>
@@ -39,14 +38,12 @@ function Contact() {
                 <a id="contact-telephone" className="telephone" href="tel:+299641603">Telefon: (+299)641603</a>
               </p>
               <p className="email">
-                <a href="mailto:laila@llregnskab.com" id="contact-company-email">Email: laila@llregnskab.com</a>
+                <a href="mailto:niviaq@llregnskab.com" id="contact-company-email">Email: niviaq@llregnskab.com</a>
               </p>
               <div className="location">
-                <a id="contact-address" className="address" href='https://www.google.com/maps/place/Jens+Kreuzmannip+Aqq.+4,+Nuuk+3900' target='_blank' rel='noreferrer'>
+                <a id="contact-address" className="address" href='https://www.google.com/maps/place/Tumi+Consulting+ApS/@64.1719139,-51.7370675,19z/data=!3m1!4b1!4m5!3m4!1s0x4ea20fee844f428d:0xfcb56976bf831965!8m2!3d64.1719139!4d-51.7365203' target='_blank' rel='noreferrer'>
                   Adresse: Jens Kreutzmannip Aqq. 4, 1.sal, 3900 Nuuk
                 </a>
-                <p className="PO-box">Postboks 442</p>
-                <p className="cvr">CVR nr. 12924453</p>
               </div>
             </div>
           </div>

@@ -1,16 +1,17 @@
 import React, {
   Suspense,
   useEffect,
-  useRef,
   useState
 } from'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 import './navbar.css';
 import Logo from './../../assets/logo.jpg';
 
 function Navbar() {
   const windowLocation = useLocation();
+  const windowSize = useWindowSize();
 
   const [navbarState, SetNavbarState] = useState(false);
   const [navbarClassNames, setNavbarClassNames] = useState({
@@ -59,6 +60,10 @@ function Navbar() {
     }, 200);
   });
 
+  const addressQaqortoq = windowSize.width > 1100? 'Sanatorievej B1004, 3920 Qaqortoq' : 'Sanatorievej B1004'
+  const addressNuuk = windowSize.width > 1100? 'Jens Kreutzmannip Aqq. 4, 1.sal, 3900 Nuuk' : 'Jens Kreutzmannip Aqq. 4'
+
+
   return (
     <div id="container">
     <div className="top-bar">
@@ -84,7 +89,15 @@ function Navbar() {
           <circle cx="12" cy="11" r="3"></circle>
           <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
         </svg>
-          <a id="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>Adresse: Sanatorievej 1004, Qaqortoq</a>
+          <p className='address-tag'>Adresse:</p>
+          <div className='addresses'>
+            <a id="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>
+              {addressQaqortoq}
+            </a>
+            <a id="address" href='https://www.google.com/maps/place/Tumi+Consulting+ApS/@64.1719139,-51.7370675,19z/data=!3m1!4b1!4m5!3m4!1s0x4ea20fee844f428d:0xfcb56976bf831965!8m2!3d64.1719139!4d-51.7365203' target='_blank' rel='noreferrer'>
+              {addressNuuk}
+            </a>
+          </div>
         </li>
       </ul>
       <div className="link-burger" onClick={() => {SetNavbarState(!navbarState)}}>
@@ -100,24 +113,7 @@ function Navbar() {
         <li><Link className={navbarClassNames.link} to='/contact'>Kontakt</Link></li>
       </ul>
       <li className='languages'>
-        <Link className='lang' to={windowLocation.pathname} id='da'>
-          <img
-            src="https://flagcdn.com/20x15/dk.png"
-            srcSet="https://flagcdn.com/40x30/dk.png 2x,https://flagcdn.com/60x45/dk.png 3x"
-            width="35"
-            height="15"
-            alt="DK">
-          </img>
-        </Link>
-        <Link className='lang' to={'/en' + windowLocation.pathname} id='en'>
-          <img
-            src="https://flagcdn.com/20x15/us.png"
-            srcSet="https://flagcdn.com/40x30/us.png 2x,https://flagcdn.com/60x45/us.png 3x"
-            width="30"
-            height="15"
-            alt="United States">
-          </img>
-        </Link>
+
         <Link className='lang' to={'/grl' + windowLocation.pathname} id='grl'>
           <img
             src="https://flagcdn.com/20x15/gl.png"
@@ -127,6 +123,27 @@ function Navbar() {
             alt="Greenland">
           </img>
         </Link>
+
+        <Link className='lang' to={windowLocation.pathname} id='da'>
+          <img
+            src="https://flagcdn.com/20x15/dk.png"
+            srcSet="https://flagcdn.com/40x30/dk.png 2x,https://flagcdn.com/60x45/dk.png 3x"
+            width="35"
+            height="15"
+            alt="DK">
+          </img>
+        </Link>
+
+        <Link className='lang' to={'/en' + windowLocation.pathname} id='en'>
+          <img
+            src="https://flagcdn.com/20x15/us.png"
+            srcSet="https://flagcdn.com/40x30/us.png 2x,https://flagcdn.com/60x45/us.png 3x"
+            width="30"
+            height="15"
+            alt="United States">
+          </img>
+        </Link>
+
         </li>
     </nav>
     <Suspense fallback={<h1>Loading...</h1>}>
