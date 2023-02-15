@@ -84,7 +84,7 @@
   margin-right: 50px;
   width: var(--right-image-width);
   max-width: 600px;
-  background-image: url('../../assets/office-wide.jpg');
+  background-image: url('../../assets/summer.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,6 +108,7 @@
   }
 
   .right-image {
+    margin-right: 0;
     margin-top: 20px;
     width: 75vw;
     height: 300px;

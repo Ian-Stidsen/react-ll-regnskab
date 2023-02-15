@@ -64,10 +64,12 @@
   position: relative;
   justify-content: center;
   width: 60vw;
+  max-width: 1000px;
   height: 300px;
+  min-height: 20vw;
   margin-top: 40px;
   border-radius: 10px;
-  background-image: url('../../assets/office-wide.jpg');
+  background-image: url('../../assets/winter.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -76,5 +78,9 @@
   .intro {
     margin-top: 80px;
     height: 300px;
+  }
+
+  .bottom-image {
+    width: 90vw;
   }
 }

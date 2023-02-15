@@ -120,22 +120,18 @@
 
 #stine .card-img {
   background-image: url('../../assets/employees/Stine\ Semsen.jpg');
-  background-position-y: -10px;
 }
 
 #pitti .card-img {
   background-image: url('../../assets/employees/Pitti\ Semsen.jpg');
-  background-position-y: -10px;
 }
 
 #niviaq .card-img {
   background-image: url('../../assets/employees/Niviaq\ A.\ Petersen.jpg');
-  background-position-y: -30px;
 }
 
 #sikkersoq .card-img {
   background-image: url('../../assets/employees/Sikkersoq\ Berthelsen.jpg');
-  background-position-y: 0;
 }
 
 @media screen and (min-width: 1000px) {
