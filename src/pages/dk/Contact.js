@@ -34,9 +34,6 @@ function Contact() {
             <div className="card-img"></div>
             <h3 id="contact-company" className="card-title">Nuuk</h3>
             <div className="card-body">
-              <p className="phone">
-                <a id="contact-telephone" className="telephone" href="tel:+299641603">Telefon: (+299)641603</a>
-              </p>
               <p className="email">
                 <a href="mailto:niviaq@llregnskab.com" id="contact-company-email">Email: niviaq@llregnskab.com</a>
               </p>

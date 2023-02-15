@@ -6,7 +6,7 @@ function About() {
   return (
     <div>
       <div className="intro">
-        <h1 id="about-intro">Om LL Regnskab</h1>
+        <h1 id="about-intro">Om LL Regnskab ApS</h1>
       </div>
       <main className='main-about'>
         <div className="about">

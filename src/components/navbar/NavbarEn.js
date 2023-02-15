@@ -1,16 +1,17 @@
 import React, {
   Suspense,
   useEffect,
-  useRef,
   useState
 } from'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 import './navbar.css';
 import Logo from './../../assets/logo.jpg';
 
 function Navbar() {
   const windowLocation = useLocation();
+  const windowSize = useWindowSize();
 
   const [navbarState, SetNavbarState] = useState(false);
   const [navbarClassNames, setNavbarClassNames] = useState({
@@ -59,6 +60,9 @@ function Navbar() {
     }, 200);
   });
 
+  const addressQaqortoq = windowSize.width > 1100? 'Sanatorievej B1004, 3920 Qaqortoq' : 'Sanatorievej B1004';
+  const addressNuuk = windowSize.width > 1100? 'Jens Kreutzmannip Aqq. 4, 1.sal, 3900 Nuuk' : 'Jens Kreutzmannip Aqq. 4';
+
   return (
     <div id="container">
     <div className="top-bar">
@@ -79,14 +83,20 @@ function Navbar() {
           <a id="email" href='mailto:laila@llregnskab.com'>E-mail: laila@llregnskab.com</a>
         </li>
         <li className="top-address">
-        <svg xmlns="http://www.w3.org/2000/svg" className="top-icon location" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <circle cx="12" cy="11" r="3"></circle>
-          <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
-        </svg>
-          <a id="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>
-            Address: Sanatorievej 1004, Qaqortoq
-          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" className="top-icon location" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="12" cy="11" r="3"></circle>
+            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+          </svg>
+          <p className='address-tag'>Address:</p>
+          <div className='addresses'>
+            <a id="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>
+              {addressQaqortoq}
+            </a>
+            <a id="address" href='https://www.google.com/maps/place/Tumi+Consulting+ApS/@64.1719139,-51.7370675,19z/data=!3m1!4b1!4m5!3m4!1s0x4ea20fee844f428d:0xfcb56976bf831965!8m2!3d64.1719139!4d-51.7365203' target='_blank' rel='noreferrer'>
+              {addressNuuk}
+            </a>
+          </div>
         </li>
       </ul>
       <div className="link-burger" id="navToggle" onClick={() => {SetNavbarState(!navbarState)}}>
