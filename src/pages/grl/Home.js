@@ -13,7 +13,8 @@ function Home() {
         <div className="short-introduction">
           <h2>LL regnskab ApS</h2>
           <p>LL Regnskab ApS naatsorsuuserivittut suliffeqarfiuvoq. 
-            LL Regnskab ApS Qaqortumi allaffeqarpoq taavalu 2017-mi aallartinneqarluni.
+            LL Regnskab ApS Qaqortumi tungaveqarpoq, Nuummi allafeqarlunilu. 
+            Suliffeqarfik 2017-mi aallartinneqarpoq
           </p>
         </div>
         <div className="bottom-image"></div>

@@ -11,7 +11,7 @@ function Contact() {
   <main className='main-contact'>
     <div className="contact">
 
-        <div className="card" id="company">
+        <div className="card" id="officeQaqortoq">
           <div className="card-img"></div>
           <h3 id="contact-company" className="card-title">Office</h3>
           <div className="card-body">

@@ -12,9 +12,9 @@ function Home() {
       <main className='main-home'>
         <div className="short-introduction text-center">
           <h2>LL Regnskab ApS</h2>
-          <p>LL Regnskab ApS er en grønlandsk regnskab og bogholderi virksomhed. <br></br>
-            LL Regnskab har et kontor i Qaqortoq. <br></br>
-            LL Regnskab blev startet i 2017.
+          <p>LL Regnskab ApS er en grønlandsk regnskabs- og bogholderivirksomhed. <br></br>
+            LL Regnskab er baseret i Qaqortoq og har kontor i Nuuk. <br></br>
+            Virksomheden blev grundlagt i 2017.
           </p>
         </div>
         <div className="bottom-image"></div>

@@ -11,9 +11,9 @@ function Contact() {
       <main className='main-contact'>
         <div className="contact">
 
-          <div className="card" id="company">
+          <div className="card" id="officeQaqortoq">
             <div className="card-img"></div>
-            <h3 id="contact-company" className="card-title">Kontor</h3>
+            <h3 id="contact-company" className="card-title">Qaqortoq</h3>
             <div className="card-body">
               <p className="phone">
                 <a id="contact-telephone" className="telephone" href="tel:+299641603">Telefon: (+299)641603</a>
@@ -22,7 +22,29 @@ function Contact() {
                 <a href="mailto:laila@llregnskab.com" id="contact-company-email">Email: laila@llregnskab.com</a>
               </p>
               <div className="location">
-                <a id="contact-address" className="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>Adresse: Sanatorievej B 1004, 3920 Qaqortoq</a>
+                <a id="contact-address" className="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>
+                  Adresse: Sanatorievej B 1004, 3920 Qaqortoq
+                </a>
+                <p className="PO-box">Postboks 442</p>
+                <p className="cvr">CVR nr. 12924453</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card" id="officeNuuk">
+            <div className="card-img"></div>
+            <h3 id="contact-company" className="card-title">Nuuk</h3>
+            <div className="card-body">
+              <p className="phone">
+                <a id="contact-telephone" className="telephone" href="tel:+299641603">Telefon: (+299)641603</a>
+              </p>
+              <p className="email">
+                <a href="mailto:laila@llregnskab.com" id="contact-company-email">Email: laila@llregnskab.com</a>
+              </p>
+              <div className="location">
+                <a id="contact-address" className="address" href='https://www.google.com/maps/place/Jens+Kreuzmannip+Aqq.+4,+Nuuk+3900' target='_blank' rel='noreferrer'>
+                  Adresse: Jens Kreutzmannip Aqq. 4, 1.sal, 3900 Nuuk
+                </a>
                 <p className="PO-box">Postboks 442</p>
                 <p className="cvr">CVR nr. 12924453</p>
               </div>
@@ -40,6 +62,7 @@ function Contact() {
                 <p className="email">
                   <a id="contact-email" href='mailto:laila@llregnskab.com'>Email: laila@llregnskab.com</a>
                 </p>
+                <p className="department">Afdeling: Qaqortoq</p>
               </div>
             </div>
           </div>
@@ -52,6 +75,7 @@ function Contact() {
                 <p className="email">
                   <a id="contact-email" href='mailto:stine@llregnskab.com'>Email: stine@llregnskab.com</a>
                 </p>
+                <p className="department">Afdeling: Qaqortoq</p>
               </div>
             </div>
           </div>
@@ -64,6 +88,7 @@ function Contact() {
                 <p className="email">
                   <a id="contact-email" href='mailto:pitti@llregnskab.com'>Email: pitti@llregnskab.com</a>
                 </p>
+                <p className="department">Afdeling: Qaqortoq</p>
               </div>
             </div>
           </div>
@@ -76,6 +101,7 @@ function Contact() {
                 <p className="email">
                   <a id="contact-email" href='mailto:niviaq@llregnskab.com'>Email: niviaq@llregnskab.com</a>
                 </p>
+                <p className="department">Afdeling: Nuuk</p>
               </div>
             </div>
           </div>
@@ -88,6 +114,7 @@ function Contact() {
                 <p className="email">
                   <a id="contact-email" href='mailto:sikkersoq@llregnskab.com'>Email: sikkersoq@llregnskab.com</a>
                 </p>
+                <p className="department">Afdeling: Qaqortoq</p>
               </div>
             </div>
           </div>

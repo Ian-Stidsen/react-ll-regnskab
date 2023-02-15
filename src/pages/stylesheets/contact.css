@@ -65,6 +65,7 @@
 .card p {
   margin: 0;
   margin-top: 10px;
+  color: var(--text-color);
 }
 
 .card p:first-child {
@@ -109,30 +110,25 @@
   border-bottom-right-radius: 0 !important;
 }
 
-#company .card-img {
+#officeQaqortoq .card-img {
   background-image: url('../../assets/office.jpg');
   height: 175px;
 }
 
-#laila .card-img {
-  background-image: url('../../assets/employees/Laila\ Lund.jpg');
+#officeNuuk .card-img {
+  background-image: url('../../assets/office.jpg');
+  height: 175px;
 }
 
-#stine .card-img {
-  background-image: url('../../assets/employees/Stine\ Semsen.jpg');
-}
+#laila .card-img {background-image: url('../../assets/employees/Laila\ Lund.jpg');}
 
-#pitti .card-img {
-  background-image: url('../../assets/employees/Pitti\ Semsen.jpg');
-}
+#stine .card-img {background-image: url('../../assets/employees/Stine\ Semsen.jpg');}
 
-#niviaq .card-img {
-  background-image: url('../../assets/employees/Niviaq\ A.\ Petersen.jpg');
-}
+#pitti .card-img {background-image: url('../../assets/employees/Pitti\ Semsen.jpg');}
 
-#sikkersoq .card-img {
-  background-image: url('../../assets/employees/Sikkersoq\ Berthelsen.jpg');
-}
+#niviaq .card-img {background-image: url('../../assets/employees/Niviaq\ A.\ Petersen.jpg');}
+
+#sikkersoq .card-img {background-image: url('../../assets/employees/Sikkersoq\ Berthelsen.jpg');}
 
 @media screen and (min-width: 1000px) {
   .contact {

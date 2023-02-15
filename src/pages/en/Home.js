@@ -12,8 +12,9 @@ function Home() {
       <main className='main-home text-center'>
         <div className="short-introduction">
           <h2>LL Regnskab ApS</h2>
-          <p>LL Regnskab ApS is a Greenlandic accounting and bookkeeping company. 
-          LL Regnskab ApS is based in Qaqortoq and it started in 2017.
+          <p>
+            LL Regnskab ApS is a Greenlandic accounting and bookkeeping company.
+            LL Regnskab ApS is based in Qaqortoq and has an office in Nuuk. The company was founded in 2017.
           </p>
         </div>
         <div className="bottom-image"></div>
