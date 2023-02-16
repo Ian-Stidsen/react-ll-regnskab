@@ -48,6 +48,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
+  min-width: 310px;
 }
 
 .top-address p {
@@ -112,6 +113,10 @@ a:hover {
   align-items: center;
   margin-right: 40px;
   z-index: 10;
+}
+
+#longLink {
+  min-width: 240px;
 }
 
 .nav-links a {
@@ -212,7 +217,7 @@ a:hover {
   transform: translateY(8px);
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
   .top-links,
   .languages,
   .nav-links {
@@ -241,5 +246,11 @@ a:hover {
 
   .background-image {
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .top-address {
+    display: none;
   }
 }

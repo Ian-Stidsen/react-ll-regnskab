@@ -15,7 +15,7 @@
   padding: 0;
 }
 
-.intro {
+.intro-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,13 +27,13 @@
   background-position: center;
 }
 
-.intro h1 {
+.intro-about h1 {
   font-size: 3rem;
   color: white;
   text-shadow: 2px -2px black;
   font-weight: normal;
   margin-bottom: 40px;
-  transform: translateY(-60px);
+  transform: translateY(-50px);
 }
 
 .about {
@@ -119,8 +119,8 @@
   }
 }
 
-@media screen and (max-width: 850px) {
-  .intro {
+@media screen and (max-width: 800px) {
+  .intro-about {
     margin-top: 80px;
     height: 300px;
   }  
@@ -132,7 +132,7 @@
     height: 350px;
   }
 
-  .intro h1 {
+  .intro-about h1 {
     font-size: 2rem;
   }
 }

@@ -5,8 +5,8 @@ import '../stylesheets/home.css';
 function Home() {
   return (
     <div>
-      <div className="intro">
-        <h1 id="introh1">Welcome to</h1>
+      <div className="intro-home">
+        <h1>Welcome to</h1>
       <h2 id="intro-name">LL Regnskab ApS</h2>
       </div>
       <main className='main-home text-center'>

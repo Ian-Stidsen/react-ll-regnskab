@@ -5,7 +5,7 @@ import '../stylesheets/about.css';
 function About() {
   return (
     <div>
-      <div className="intro">
+      <div className="intro-about">
         <h1 id="about-intro">Om LL Regnskab ApS</h1>
       </div>
       <main className='main-about'>

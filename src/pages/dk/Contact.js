@@ -5,7 +5,7 @@ import '../stylesheets/contact.css';
 function Contact() {
   return (
     <div>
-      <div className="intro">
+      <div className="intro-contact">
         <h1 id="contact-intro">Kontakt os</h1>
       </div>
       <main className='main-contact'>

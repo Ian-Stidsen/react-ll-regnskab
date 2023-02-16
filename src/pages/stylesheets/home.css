@@ -10,7 +10,7 @@
   padding: 0;
 }
 
-.intro {
+.intro-home {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +22,7 @@
   background-position: center;
 }
 
-.intro h1 {
+.intro-home h1 {
   font-size: 3rem;
   color: white;
   text-shadow: 2px -2px black;
@@ -32,7 +32,7 @@
   margin-left: 0;
 }
 
-.intro h2 {
+.intro-home h2 {
   color: white;
   margin-top: 0;
   font-weight: normal;
@@ -75,8 +75,8 @@
   background-position: center;
 }
 
-@media screen and (max-width: 850px) {
-  .intro {
+@media screen and (max-width: 800px) {
+  .intro-home {
     margin-top: 80px;
     height: 300px;
   }
