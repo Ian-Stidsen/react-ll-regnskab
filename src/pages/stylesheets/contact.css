@@ -161,8 +161,9 @@
 }
 
 @media screen and (max-width: 650px) {
-  .contact-contact {
+  .contact {
     grid-template-areas: 
+    'card'
     'card'
     'card'
     'card'
