@@ -13,7 +13,7 @@ function About() {
           <h2 id="about-about">Om</h2>
           <p id="about-description">
             LL Regnskab ApS er stiftet 1. juli 2017 og vi har kontorer i 
-            Qaqortoq og Nuuk med fire ansatte og en studerende.
+            Qaqortoq og Nuuk med fem ansatte.
           </p>
           <h3 id="jobs-h1">Hvad vi laver</h3>
           <ul>
