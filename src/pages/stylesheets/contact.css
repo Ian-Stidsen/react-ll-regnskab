@@ -118,12 +118,6 @@
   background-position: 0 -30px;
 }
 
-#officeNuuk .card-img {
-  background-image: url('../../assets/officeNuuk.jpg');
-  height: 225px;
-  background-position: center;
-}
-
 #laila .card-img {
   background-image: url('../../assets/employees/Laila\ Lund.jpg');
   height: 225px;
@@ -134,11 +128,9 @@
 
 #pitti .card-img {background-image: url('../../assets/employees/Pitti\ Semsen.jpg');}
 
-#niviaq .card-img {background-image: url('../../assets/employees/Niviaq\ A.\ Petersen.jpg');}
-
-#sikkersoq .card-img {
-  background-image: url('../../assets/employees/Sikkersoq\ Berthelsen.jpg');
-  background-position: 0 -15px;
+#ian .card-img {
+  background-image: url('../../assets/employees/Ian\ L.\ Stidsen.jpeg');
+  background-position: 0 -90px;
 }
 
 @media screen and (min-width: 1000px) {

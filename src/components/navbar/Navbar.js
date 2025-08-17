@@ -94,9 +94,6 @@ function Navbar() {
             <a id="address" href='http://maps.google.com/?q=1004%20Sanatorievej' target='_blank' rel='noreferrer'>
               {addressQaqortoq}
             </a>
-            <a id="address" href='https://www.google.com/maps/place/Tumi+Consulting+ApS/@64.1719139,-51.7370675,19z/data=!3m1!4b1!4m5!3m4!1s0x4ea20fee844f428d:0xfcb56976bf831965!8m2!3d64.1719139!4d-51.7365203' target='_blank' rel='noreferrer'>
-              {addressNuuk}
-            </a>
           </div>
         </li>
       </ul>
