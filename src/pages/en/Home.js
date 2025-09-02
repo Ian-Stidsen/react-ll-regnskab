@@ -14,7 +14,7 @@ function Home() {
           <h2>LL Regnskab ApS</h2>
           <p>
             LL Regnskab ApS is a Greenlandic accounting and bookkeeping company.
-            LL Regnskab ApS is based in Qaqortoq and has an office in Nuuk. The company was founded in 2017.
+            LL Regnskab ApS is based in Qaqortoq. The company was founded in 2017.
           </p>
         </div>
         <div className="bottom-image"></div>

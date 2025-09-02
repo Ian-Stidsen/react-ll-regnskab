@@ -13,7 +13,7 @@ function Home() {
         <div className="short-introduction text-center">
           <h2>LL Regnskab ApS</h2>
           <p>LL Regnskab ApS er en grønlandsk regnskabs- og bogholderivirksomhed. <br></br>
-            LL Regnskab er baseret i Qaqortoq og har kontor i Nuuk. <br></br>
+            LL Regnskab er baseret i Qaqortoq. <br></br>
             Virksomheden blev grundlagt i 2017.
           </p>
         </div>

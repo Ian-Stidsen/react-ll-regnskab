@@ -79,6 +79,18 @@ function Contact() {
           </div>
         </div>
 
+        <div className="card" id="eleonora">
+          <div className="card-img"></div>
+          <h3 className="card-title">Eleonora Hoffmeyer</h3>
+          <div className="card-body">
+            <div className="card-text">
+              <p className="email">
+                <a id="contact-email" href='mailto:eleonora@llregnskab.com'>Email: eleonora@llregnskab.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
     </div>
   </main>
     </div>

@@ -133,6 +133,12 @@
   background-position: 0 -90px;
 }
 
+#eleonora .card-img {background-image: url('../../assets/employees/Eleonora\ Hoffmeyer.jpg');
+  background-position: 0 0px;
+
+}
+
+
 @media screen and (min-width: 1000px) {
   .contact {
     grid-template-areas: 

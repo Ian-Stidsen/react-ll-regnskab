@@ -57,7 +57,6 @@ function NavbarGrl() {
   });
 
   const addressQaqortoq = windowSize.width > 1100? 'Sanatorievej B1004, 3920 Qaqortoq' : 'Sanatorievej B1004';
-  const addressNuuk = windowSize.width > 1100? 'Jens Kreutzmannip Aqq. 4, 1.sal, 3900 Nuuk' : 'Jens Kreutzmannip Aqq. 4';
   
   return (
     <div id="container">
