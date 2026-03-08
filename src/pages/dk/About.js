@@ -12,8 +12,8 @@ function About() {
         <div className="about">
           <h2 id="about-about">Om</h2>
           <p id="about-description">
-            LL Regnskab ApS er stiftet 1. juli 2017 og vi har kontorer i 
-            Qaqortoq med fem ansatte.
+            LL Regnskab ApS er stiftet 1. juli 2017 og vi har et kontor i 
+            Qaqortoq med fire ansatte.
           </p>
           <h3 id="jobs-h1">Hvad vi laver</h3>
           <ul>

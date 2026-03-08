@@ -127,12 +127,12 @@ function NavbarGrl() {
         
         <Link className='lang' to={'/en/' + windowLocation.pathname.split('/')[2]} id='en'>
           <img
-            src="https://flagcdn.com/20x15/us.png"
-            srcSet="https://flagcdn.com/40x30/us.png 2x,
-              https://flagcdn.com/60x45/us.png 3x"
+            src="https://flagcdn.com/20x15/gb.png"
+            srcSet="https://flagcdn.com/40x30/gb.png 2x,
+              https://flagcdn.com/60x45/gb.png 3x"
             width="30"
             height="15"
-            alt="United States"/>
+            alt="UK"/>
         </Link>
        
         </li>

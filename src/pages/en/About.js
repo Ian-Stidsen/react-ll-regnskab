@@ -13,7 +13,7 @@ function About() {
           <h2 id="about-about">About</h2>
           <p id="about-description">
             LL Regnskab ApS was founded on July 1, 2017.
-            And we have offices in Qaqortoq with five employees.
+            And we have an office in Qaqortoq with four employees.
           </p>
           <h3 id="jobs-h1">What we do</h3>
           <ul>
