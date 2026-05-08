@@ -43,7 +43,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className="card" id="stine">
+        {/* <div className="card" id="stine">
           <div className="card-img"></div>
           <h3 className="card-title">Stine Semsen</h3>
           <div className="card-body">
@@ -53,7 +53,7 @@ function Contact() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="card" id="pitti">
           <div className="card-img"></div>
